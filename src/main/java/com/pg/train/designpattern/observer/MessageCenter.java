@@ -12,7 +12,7 @@ public class MessageCenter implements Subject {
 
 	private String commonMsg;
 
-	private MessageCenter() {
+	public MessageCenter() {
 		observers = new ArrayList<>();
 	}
 
@@ -28,7 +28,7 @@ public class MessageCenter implements Subject {
 
 	@Override
 	public void notifyObservers() {
-		observers.stream().parallel().forEach(observer -> observer.update(commonMsg));
+		observers.stream().forEach(observer -> observer.update(commonMsg));
 	}
 
 	public void messageUpdate() {
