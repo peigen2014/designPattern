@@ -5,7 +5,7 @@ import com.pg.train.designpattern.decorator.base.Beverage;
 public class DarkRoast extends Beverage {
 
 	public DarkRoast() {
-		description = "DarkRoast";
+		description = "DarkRoast１";
 	}
 
 	@Override

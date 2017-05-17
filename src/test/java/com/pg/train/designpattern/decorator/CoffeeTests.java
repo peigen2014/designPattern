@@ -16,8 +16,9 @@ public class CoffeeTests {
 
 		Beverage beverage2 = new DarkRoast();
 
-		beverage2 = new Mocha(beverage2);
-		beverage2 = new Mocha(beverage2);
+		for (int i = 0; i < 10; i++) {
+			beverage2 = new Mocha(beverage2);
+		}
 
 		System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
 	}
